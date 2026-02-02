@@ -3844,20 +3844,22 @@
             updateStats();
         }
 
-        // === AUTO-SAVE FUNKTION ===
+        // === AUTO-SAVE FUNCTION (Silent) ===
         async function autoSave(action) {
             if (!STATE.token || !STATE.user) {
-                showToast('warning', 'Not logged in - changes not saved');
+                console.log('Not logged in - changes marked for later save');
                 markAsChanged();
                 return;
             }
 
-            const commitMessage = `${action} (via Mission Control)`;
-            showToast('info', '💾 Saving...');
+            const commitMessage = `${action} (auto-saved)`;
+            console.log('Auto-saving:', action);
 
             const success = await saveTasksToGitHub(commitMessage);
-            if (!success) {
-                markAsChanged(); // Show "unsaved changes" if failed
+            if (success) {
+                console.log('✓ Auto-saved successfully');
+            } else {
+                markAsChanged();
             }
         }
 
