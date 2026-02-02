@@ -198,7 +198,7 @@
       "id": "leia_moltbook",
       "title": "📡 Moltbook Account Recovery",
       "description": "Monitor and recover Moltbook account status. Account was banned due to aggressive posting, now monitoring for unban.\\n\\n**API Key:** moltbook_sk_Yd10CWTQ2_u2k31FEbhDCrsvgWecKx7I",
-      "status": "review",
+      "status": "done",
       "project": "leia",
       "tags": [
         "moltbook",
