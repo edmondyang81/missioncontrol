@@ -379,7 +379,7 @@
       "id": "man_united_tracker",
       "title": "🔴 Man United Match Tracker",
       "description": "Track Manchester United matches and send reminders to Edmond.\\n\\n**Setup:** Automated Sunday reminders at 13:45 (45 mins before kickoff)",
-      "status": "backlog",
+      "status": "in_progress",
       "project": "automation",
       "tags": [
         "sports",
