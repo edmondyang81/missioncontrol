@@ -5211,6 +5211,67 @@
             if (e.key === 'Enter') handleLogin();
         });
 
+        // === RENDER WRAPPERS ===
+        function renderBoard() {
+            console.log('renderBoard called');
+            if (!STATE.data && !window.FALLBACK_DATA) {
+                console.error('No data available');
+                return;
+            }
+            renderTasks();
+            renderFilters();
+            updateStats();
+        }
+
+        function renderProjects() {
+            console.log('renderProjects called');
+            if (!STATE.data && !window.FALLBACK_DATA) {
+                console.error('No data available');
+                return;
+            }
+            renderProjectsList();
+        }
+
+        function updateActivityFeed() {
+            console.log('updateActivityFeed called');
+            if (!STATE.data && !window.FALLBACK_DATA) {
+                console.error('No data available');
+                return;
+            }
+            renderActivity();
+        }
+
+        function renderAll() {
+            console.log('renderAll called');
+            renderBoard();
+            renderProjects();
+            renderActivity();
+            renderCrons();
+            renderTemplates();
+            renderScheduledTasks();
+        }
+
+        function renderFilters() {
+            // Update filter counts and state
+            updateStats();
+        }
+
+        function updateStats() {
+            const data = STATE.data || window.FALLBACK_DATA;
+            if (!data || !data.tasks) return;
+            
+            const tasks = data.tasks;
+            const counts = {
+                permanent: tasks.filter(t => t.status === 'permanent').length,
+                backlog: tasks.filter(t => t.status === 'backlog').length,
+                in_progress: tasks.filter(t => t.status === 'in_progress').length,
+                review: tasks.filter(t => t.status === 'review').length,
+                done: tasks.filter(t => t.status === 'done').length
+            };
+            
+            console.log('Task counts:', counts);
+        }
+
         // Check auth on page load
         checkAuth();
     </script>
