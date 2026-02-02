@@ -4,7 +4,7 @@
       "id": "guide_onboarding",
       "title": "🚀 Onboarding Guide — Set Up Mission Control",
       "description": "Welcome to Mission Control! Follow these steps to complete your setup. Work through each subtask in order.\\n\\n**Tip:** Click on a subtask to see detailed instructions. Check it off when done.",
-      "status": "backlog",
+      "status": "permanent",
       "project": "guides",
       "tags": [
         "guide",
@@ -299,7 +299,7 @@
       "id": "instagram_content",
       "title": "📱 Instagram Content Creation",
       "description": "Create and schedule Instagram content for Edmond's AI video projects.\\n\\n**Focus areas:**\\n- AI video experiments\\n- Trending memes to AI videos\\n- Behind-the-scenes workflow\\n- Client acquisition posts",
-      "status": "backlog",
+      "status": "in_progress",
       "project": "content",
       "tags": [
         "instagram",
