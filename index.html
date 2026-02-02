@@ -65,6 +65,7 @@
         .column-tasks {
             flex: 1;
             min-height: 100px;
+            padding: 4px;
         }
         .column-tasks.drag-over {
             background: #262626;
@@ -563,7 +564,7 @@
                         <span class="column-count">${tasks.length}</span>
                     </div>
                     <div class="column-tasks" data-status="${col.id}" ondrop="handleDrop(event, '${col.id}')" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)">
-                        ${tasks.length === 0 ? '<div class="empty-state">Drop tasks here</div>' : ''}
+                        ${tasks.length === 0 ? '<div class="empty-state" style="pointer-events: none;">Drop tasks here</div>' : ''}
                     </div>
                 `;
                 
@@ -610,6 +611,7 @@
             draggedTask = TASKS_DATA.tasks.find(t => t.id === e.target.dataset.taskId);
             e.target.classList.add('dragging');
             e.dataTransfer.effectAllowed = 'move';
+            e.dataTransfer.setData('text/plain', e.target.dataset.taskId);
         }
 
         function handleDragEnd(e) {
@@ -626,17 +628,33 @@
         }
 
         function handleDragLeave(e) {
-            e.currentTarget.classList.remove('drag-over');
+            // Only remove drag-over if we're actually leaving the container (not entering a child)
+            if (!e.currentTarget.contains(e.relatedTarget)) {
+                e.currentTarget.classList.remove('drag-over');
+            }
         }
 
         function handleDrop(e, newStatus) {
             e.preventDefault();
-            e.currentTarget.classList.remove('drag-over');
+            e.stopPropagation();
             
-            if (draggedTask && draggedTask.status !== newStatus) {
-                draggedTask.status = newStatus;
+            // Find the column-tasks container (handle bubbling from child elements)
+            let target = e.target;
+            while (target && !target.classList.contains('column-tasks')) {
+                target = target.parentElement;
+            }
+            if (target) {
+                target.classList.remove('drag-over');
+            }
+            
+            // Get task ID from dataTransfer as fallback
+            const taskId = e.dataTransfer.getData('text/plain');
+            const taskToMove = draggedTask || TASKS_DATA.tasks.find(t => t.id === taskId);
+            
+            if (taskToMove && taskToMove.status !== newStatus) {
+                taskToMove.status = newStatus;
                 renderBoard();
-                console.log(`Moved "${draggedTask.title}" to ${newStatus}`);
+                console.log(`Moved "${taskToMove.title}" to ${newStatus}`);
             }
             draggedTask = null;
         }
