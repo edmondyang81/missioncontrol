@@ -3,19 +3,54 @@
     {
       "id": "guide_onboarding",
       "title": "🚀 Onboarding Guide — Set Up Mission Control",
-      "description": "Welcome to Mission Control! Follow these steps to complete your setup. Work through each subtask in order.\n\n**Tip:** Click on a subtask to see detailed instructions. Check it off when done.",
+      "description": "Welcome to Mission Control! Follow these steps to complete your setup. Work through each subtask in order.\\n\\n**Tip:** Click on a subtask to see detailed instructions. Check it off when done.",
       "status": "permanent",
       "project": "guides",
-      "tags": ["guide", "setup"],
+      "tags": [
+        "guide",
+        "setup"
+      ],
       "subtasks": [
-        { "id": "sub_001", "title": "1. Enable GitHub Pages: Settings → Pages → Branch: main → Save", "done": true },
-        { "id": "sub_002", "title": "2. Create GitHub Token: github.com/settings/tokens → Generate (classic) → Scope: repo", "done": true },
-        { "id": "sub_003", "title": "3. Connect Dashboard: Open your GitHub Pages URL → Click 'Connect GitHub' → Paste token", "done": true },
-        { "id": "sub_004", "title": "4. Install Tailscale: brew install tailscale && tailscale up", "done": false },
-        { "id": "sub_005", "title": "5. Enable Funnel: tailscale funnel 18789 → Copy your URL", "done": false },
-        { "id": "sub_006", "title": "6. Generate Webhook Token: openssl rand -hex 32 → Save it", "done": false },
-        { "id": "sub_007", "title": "7. Add GitHub Webhook: Settings → Webhooks → Add → URL: https://YOUR-TAILSCALE-URL/hooks/github?token=YOUR-TOKEN", "done": false },
-        { "id": "sub_008", "title": "8. Test: Create a task, move to In Progress, verify MoltBot receives notification", "done": false }
+        {
+          "id": "sub_001",
+          "title": "1. Enable GitHub Pages: Settings → Pages → Branch: main → Save",
+          "done": true
+        },
+        {
+          "id": "sub_002",
+          "title": "2. Create GitHub Token: github.com/settings/tokens → Generate (classic) → Scope: repo",
+          "done": true
+        },
+        {
+          "id": "sub_003",
+          "title": "3. Connect Dashboard: Open your GitHub Pages URL → Click 'Connect GitHub' → Paste token",
+          "done": true
+        },
+        {
+          "id": "sub_004",
+          "title": "4. Install Tailscale: brew install tailscale && tailscale up",
+          "done": false
+        },
+        {
+          "id": "sub_005",
+          "title": "5. Enable Funnel: tailscale funnel 18789 → Copy your URL",
+          "done": false
+        },
+        {
+          "id": "sub_006",
+          "title": "6. Generate Webhook Token: openssl rand -hex 32 → Save it",
+          "done": false
+        },
+        {
+          "id": "sub_007",
+          "title": "7. Add GitHub Webhook: Settings → Webhooks → Add → URL: https://YOUR-TAILSCALE-URL/hooks/github?token=YOUR-TOKEN",
+          "done": false
+        },
+        {
+          "id": "sub_008",
+          "title": "8. Test: Create a task, move to In Progress, verify MoltBot receives notification",
+          "done": false
+        }
       ],
       "priority": "high",
       "comments": [
@@ -30,15 +65,34 @@
     {
       "id": "guide_user",
       "title": "📖 User Guide — How to Use Mission Control",
-      "description": "Learn how to use Mission Control effectively. Both you AND MoltBot can manage tasks!\n\n**Two ways to manage tasks:**\n• 👤 **You** — Use the Dashboard UI (drag & drop, buttons, forms)\n• 🤖 **MoltBot** — Uses CLI scripts or edits tasks.json directly",
+      "description": "Learn how to use Mission Control effectively. Both you AND MoltBot can manage tasks!\\n\\n**Two ways to manage tasks:**\\n• 👤 **You** — Use the Dashboard UI (drag & drop, buttons, forms)\\n• 🤖 **MoltBot** — Uses CLI scripts or edits tasks.json directly",
       "status": "permanent",
       "project": "guides",
-      "tags": ["guide", "help"],
+      "tags": [
+        "guide",
+        "help"
+      ],
       "subtasks": [
-        { "id": "sub_001", "title": "— THE BOARD —", "done": false },
-        { "id": "sub_002", "title": "Columns: Permanent (recurring) → Backlog → In Progress → Review → Done", "done": false },
-        { "id": "sub_003", "title": "Drag & Drop: Move tasks between columns to change status", "done": false },
-        { "id": "sub_004", "title": "Click task card to open details and edit", "done": false }
+        {
+          "id": "sub_001",
+          "title": "— THE BOARD —",
+          "done": false
+        },
+        {
+          "id": "sub_002",
+          "title": "Columns: Permanent (recurring) → Backlog → In Progress → Review → Done",
+          "done": false
+        },
+        {
+          "id": "sub_003",
+          "title": "Drag & Drop: Move tasks between columns to change status",
+          "done": false
+        },
+        {
+          "id": "sub_004",
+          "title": "Click task card to open details and edit",
+          "done": false
+        }
       ],
       "priority": "medium",
       "comments": [
@@ -53,16 +107,40 @@
     {
       "id": "leia_daily",
       "title": "🤖 Leia — Daily Tasks & Checks",
-      "description": "Daily recurring tasks for Leia to check and maintain.\n\n**Includes:**\n- Check emails\n- Check calendar\n- Monitor Moltbook status\n- Review Mission Control tasks\n- Update daily notes",
+      "description": "Daily recurring tasks for Leia to check and maintain.\\n\\n**Includes:**\\n- Check emails\\n- Check calendar\\n- Monitor Moltbook status\\n- Review Mission Control tasks\\n- Update daily notes",
       "status": "permanent",
       "project": "leia",
-      "tags": ["daily", "automation", "leia"],
+      "tags": [
+        "daily",
+        "automation",
+        "leia"
+      ],
       "subtasks": [
-        { "id": "sub_001", "title": "Check emails for urgent messages", "done": false },
-        { "id": "sub_002", "title": "Review calendar for upcoming events", "done": false },
-        { "id": "sub_003", "title": "Check Moltbook status (every 2 hours)", "done": false },
-        { "id": "sub_004", "title": "Review Mission Control tasks in 'In Progress'", "done": false },
-        { "id": "sub_005", "title": "Update daily notes in memory/", "done": false }
+        {
+          "id": "sub_001",
+          "title": "Check emails for urgent messages",
+          "done": false
+        },
+        {
+          "id": "sub_002",
+          "title": "Review calendar for upcoming events",
+          "done": false
+        },
+        {
+          "id": "sub_003",
+          "title": "Check Moltbook status (every 2 hours)",
+          "done": false
+        },
+        {
+          "id": "sub_004",
+          "title": "Review Mission Control tasks in 'In Progress'",
+          "done": false
+        },
+        {
+          "id": "sub_005",
+          "title": "Update daily notes in memory/",
+          "done": false
+        }
       ],
       "priority": "high",
       "comments": [],
@@ -71,16 +149,40 @@
     {
       "id": "leia_photoshop",
       "title": "🎨 Photoshop MCP Integration",
-      "description": "Complete Photoshop MCP server setup and create useful automation scripts.\n\n**Status:** Server installed, UXP plugin needs loading in Photoshop",
+      "description": "Complete Photoshop MCP server setup and create useful automation scripts.\\n\\n**Status:** Server installed, UXP plugin needs loading in Photoshop",
       "status": "in_progress",
       "project": "leia",
-      "tags": ["photoshop", "automation", "mcp"],
+      "tags": [
+        "photoshop",
+        "automation",
+        "mcp"
+      ],
       "subtasks": [
-        { "id": "sub_001", "title": "Install Adobe-MCP Python package", "done": true },
-        { "id": "sub_002", "title": "Start proxy server (ws://localhost:3001)", "done": true },
-        { "id": "sub_003", "title": "Load UXP plugin in Photoshop", "done": false },
-        { "id": "sub_004", "title": "Test creating documents via MCP", "done": false },
-        { "id": "sub_005", "title": "Create batch processing scripts", "done": false }
+        {
+          "id": "sub_001",
+          "title": "Install Adobe-MCP Python package",
+          "done": true
+        },
+        {
+          "id": "sub_002",
+          "title": "Start proxy server (ws://localhost:3001)",
+          "done": true
+        },
+        {
+          "id": "sub_003",
+          "title": "Load UXP plugin in Photoshop",
+          "done": false
+        },
+        {
+          "id": "sub_004",
+          "title": "Test creating documents via MCP",
+          "done": false
+        },
+        {
+          "id": "sub_005",
+          "title": "Create batch processing scripts",
+          "done": false
+        }
       ],
       "priority": "medium",
       "comments": [
@@ -95,17 +197,45 @@
     {
       "id": "leia_moltbook",
       "title": "📡 Moltbook Account Recovery",
-      "description": "Monitor and recover Moltbook account status. Account was banned due to aggressive posting, now monitoring for unban.\n\n**API Key:** moltbook_sk_Yd10CWTQ2_u2k31FEbhDCrsvgWecKx7I",
+      "description": "Monitor and recover Moltbook account status. Account was banned due to aggressive posting, now monitoring for unban.\\n\\n**API Key:** moltbook_sk_Yd10CWTQ2_u2k31FEbhDCrsvgWecKx7I",
       "status": "review",
       "project": "leia",
-      "tags": ["moltbook", "monitoring", "social"],
+      "tags": [
+        "moltbook",
+        "monitoring",
+        "social"
+      ],
       "subtasks": [
-        { "id": "sub_001", "title": "Account banned - aggressive posting detected", "done": true },
-        { "id": "sub_002", "title": "Disabled autopost cron jobs", "done": true },
-        { "id": "sub_003", "title": "Set up monitoring (every 2 hours)", "done": true },
-        { "id": "sub_004", "title": "Account unbanned - Feb 1, 21:34", "done": true },
-        { "id": "sub_005", "title": "Account banned again - Feb 2, 11:50", "done": true },
-        { "id": "sub_006", "title": "Wait for automatic unban or contact support", "done": false }
+        {
+          "id": "sub_001",
+          "title": "Account banned - aggressive posting detected",
+          "done": true
+        },
+        {
+          "id": "sub_002",
+          "title": "Disabled autopost cron jobs",
+          "done": true
+        },
+        {
+          "id": "sub_003",
+          "title": "Set up monitoring (every 2 hours)",
+          "done": true
+        },
+        {
+          "id": "sub_004",
+          "title": "Account unbanned - Feb 1, 21:34",
+          "done": true
+        },
+        {
+          "id": "sub_005",
+          "title": "Account banned again - Feb 2, 11:50",
+          "done": true
+        },
+        {
+          "id": "sub_006",
+          "title": "Wait for automatic unban or contact support",
+          "done": false
+        }
       ],
       "priority": "low",
       "comments": [
@@ -120,16 +250,40 @@
     {
       "id": "leia_skills",
       "title": "🛠️ Install & Configure Skills",
-      "description": "Install and configure useful OpenClaw skills for automation and productivity.\n\n**Skills to install:**\n- Mission Control (task management) ✅ Done\n- Photoshop MCP (image editing)\n- Instagram downloader\n- Other useful tools",
+      "description": "Install and configure useful OpenClaw skills for automation and productivity.\\n\\n**Skills to install:**\\n- Mission Control (task management) ✅ Done\\n- Photoshop MCP (image editing)\\n- Instagram downloader\\n- Other useful tools",
       "status": "in_progress",
       "project": "leia",
-      "tags": ["skills", "setup", "automation"],
+      "tags": [
+        "skills",
+        "setup",
+        "automation"
+      ],
       "subtasks": [
-        { "id": "sub_001", "title": "Install Mission Control skill", "done": true },
-        { "id": "sub_002", "title": "Set up GitHub Pages hosting", "done": true },
-        { "id": "sub_003", "title": "Configure auto-save", "done": true },
-        { "id": "sub_004", "title": "Create Instagram downloader skill", "done": true },
-        { "id": "sub_005", "title": "Set up webhook integration", "done": false }
+        {
+          "id": "sub_001",
+          "title": "Install Mission Control skill",
+          "done": true
+        },
+        {
+          "id": "sub_002",
+          "title": "Set up GitHub Pages hosting",
+          "done": true
+        },
+        {
+          "id": "sub_003",
+          "title": "Configure auto-save",
+          "done": true
+        },
+        {
+          "id": "sub_004",
+          "title": "Create Instagram downloader skill",
+          "done": true
+        },
+        {
+          "id": "sub_005",
+          "title": "Set up webhook integration",
+          "done": false
+        }
       ],
       "priority": "high",
       "comments": [
@@ -144,15 +298,35 @@
     {
       "id": "instagram_content",
       "title": "📱 Instagram Content Creation",
-      "description": "Create and schedule Instagram content for Edmond's AI video projects.\n\n**Focus areas:**\n- AI video experiments\n- Trending memes to AI videos\n- Behind-the-scenes workflow\n- Client acquisition posts",
+      "description": "Create and schedule Instagram content for Edmond's AI video projects.\\n\\n**Focus areas:**\\n- AI video experiments\\n- Trending memes to AI videos\\n- Behind-the-scenes workflow\\n- Client acquisition posts",
       "status": "backlog",
       "project": "content",
-      "tags": ["instagram", "content", "marketing"],
+      "tags": [
+        "instagram",
+        "content",
+        "marketing"
+      ],
       "subtasks": [
-        { "id": "sub_001", "title": "Download trending memes for AI conversion", "done": false },
-        { "id": "sub_002", "title": "Create AI video from meme", "done": false },
-        { "id": "sub_003", "title": "Write engaging captions", "done": false },
-        { "id": "sub_004", "title": "Schedule posts for optimal times", "done": false }
+        {
+          "id": "sub_001",
+          "title": "Download trending memes for AI conversion",
+          "done": false
+        },
+        {
+          "id": "sub_002",
+          "title": "Create AI video from meme",
+          "done": false
+        },
+        {
+          "id": "sub_003",
+          "title": "Write engaging captions",
+          "done": false
+        },
+        {
+          "id": "sub_004",
+          "title": "Schedule posts for optimal times",
+          "done": false
+        }
       ],
       "priority": "medium",
       "comments": [],
@@ -161,15 +335,35 @@
     {
       "id": "redgala_script",
       "title": "🎬 RedGala - Hope's Wild Dream Script",
-      "description": "Complete script translation and PDF creation for RedGala project. Story about sheep Hope who dreams of becoming a sheepdog.\n\n**Status:** Scene 1 and 2 translated to English, PDFs created",
+      "description": "Complete script translation and PDF creation for RedGala project. Story about sheep Hope who dreams of becoming a sheepdog.\\n\\n**Status:** Scene 1 and 2 translated to English, PDFs created",
       "status": "review",
       "project": "redgala",
-      "tags": ["script", "translation", "pdf"],
+      "tags": [
+        "script",
+        "translation",
+        "pdf"
+      ],
       "subtasks": [
-        { "id": "sub_001", "title": "Translate Chinese script to English", "done": true },
-        { "id": "sub_002", "title": "Create clean PDF (no Chinese characters)", "done": true },
-        { "id": "sub_003", "title": "Review with Edmond", "done": false },
-        { "id": "sub_004", "title": "Translate remaining scenes if needed", "done": false }
+        {
+          "id": "sub_001",
+          "title": "Translate Chinese script to English",
+          "done": true
+        },
+        {
+          "id": "sub_002",
+          "title": "Create clean PDF (no Chinese characters)",
+          "done": true
+        },
+        {
+          "id": "sub_003",
+          "title": "Review with Edmond",
+          "done": false
+        },
+        {
+          "id": "sub_004",
+          "title": "Translate remaining scenes if needed",
+          "done": false
+        }
       ],
       "priority": "medium",
       "comments": [
@@ -184,15 +378,35 @@
     {
       "id": "man_united_tracker",
       "title": "🔴 Man United Match Tracker",
-      "description": "Track Manchester United matches and send reminders to Edmond.\n\n**Setup:** Automated Sunday reminders at 13:45 (45 mins before kickoff)",
+      "description": "Track Manchester United matches and send reminders to Edmond.\\n\\n**Setup:** Automated Sunday reminders at 13:45 (45 mins before kickoff)",
       "status": "backlog",
       "project": "automation",
-      "tags": ["sports", "automation", "cron"],
+      "tags": [
+        "sports",
+        "automation",
+        "cron"
+      ],
       "subtasks": [
-        { "id": "sub_001", "title": "Set up automated match checking", "done": true },
-        { "id": "sub_002", "title": "Generate match preview images", "done": false },
-        { "id": "sub_003", "title": "Send WhatsApp reminders", "done": true },
-        { "id": "sub_004", "title": "Post-match summaries with results", "done": true }
+        {
+          "id": "sub_001",
+          "title": "Set up automated match checking",
+          "done": true
+        },
+        {
+          "id": "sub_002",
+          "title": "Generate match preview images",
+          "done": false
+        },
+        {
+          "id": "sub_003",
+          "title": "Send WhatsApp reminders",
+          "done": true
+        },
+        {
+          "id": "sub_004",
+          "title": "Post-match summaries with results",
+          "done": true
+        }
       ],
       "priority": "low",
       "comments": [
@@ -204,20 +418,5 @@
       ],
       "createdAt": "2026-02-01T14:00:00Z"
     }
-  ],
-  "projects": [
-    { "id": "guides", "name": "Guides", "color": "#10b981", "icon": "📚" },
-    { "id": "leia", "name": "Leia Tasks", "color": "#8b5cf6", "icon": "🤖" },
-    { "id": "content", "name": "Content", "color": "#f59e0b", "icon": "📱" },
-    { "id": "redgala", "name": "RedGala", "color": "#ef4444", "icon": "🎬" },
-    { "id": "automation", "name": "Automation", "color": "#3b82f6", "icon": "⚙️" }
-  ],
-  "activities": [
-    { "type": "created", "actor": "Leia", "task": "Leia — Daily Tasks & Checks", "time": "just now" },
-    { "type": "created", "actor": "Leia", "task": "Photoshop MCP Integration", "time": "just now" },
-    { "type": "created", "actor": "Leia", "task": "Install & Configure Skills", "time": "just now" },
-    { "type": "moved", "actor": "Leia", "task": "Photoshop MCP Integration", "from": "backlog", "to": "in_progress", "time": "just now" },
-    { "type": "moved", "actor": "Leia", "task": "Install & Configure Skills", "from": "backlog", "to": "in_progress", "time": "just now" }
-  ],
-  "lastUpdated": "2026-02-02T12:00:00Z"
+  ]
 }
