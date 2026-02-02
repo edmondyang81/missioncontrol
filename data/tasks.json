@@ -108,7 +108,7 @@
       "id": "leia_daily",
       "title": "🤖 Leia — Daily Tasks & Checks",
       "description": "Daily recurring tasks for Leia to check and maintain.\\n\\n**Includes:**\\n- Check emails\\n- Check calendar\\n- Monitor Moltbook status\\n- Review Mission Control tasks\\n- Update daily notes",
-      "status": "in_progress",
+      "status": "permanent",
       "project": "leia",
       "tags": [
         "daily",
@@ -299,7 +299,7 @@
       "id": "instagram_content",
       "title": "📱 Instagram Content Creation",
       "description": "Create and schedule Instagram content for Edmond's AI video projects.\\n\\n**Focus areas:**\\n- AI video experiments\\n- Trending memes to AI videos\\n- Behind-the-scenes workflow\\n- Client acquisition posts",
-      "status": "in_progress",
+      "status": "backlog",
       "project": "content",
       "tags": [
         "instagram",
@@ -379,7 +379,7 @@
       "id": "man_united_tracker",
       "title": "🔴 Man United Match Tracker",
       "description": "Track Manchester United matches and send reminders to Edmond.\\n\\n**Setup:** Automated Sunday reminders at 13:45 (45 mins before kickoff)",
-      "status": "in_progress",
+      "status": "backlog",
       "project": "automation",
       "tags": [
         "sports",
