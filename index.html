@@ -308,50 +308,8 @@
             background: #444;
             color: #fff;
         }
-    </style>
-</head>
-<body>
-    <div class="login-overlay" id="loginOverlay">
-        <div class="login-box">
-            <div class="logo"><span>🎯</span></div>
-            <h2>Welcome to Mission Control</h2>
-            <p>Connect your GitHub account to sync tasks</p>
-            <input type="password" id="tokenInput" class="login-input" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx">
-            <button class="login-btn" onclick="connectGitHub()">Connect</button>
-            <div class="login-help">
-                Need a token? <a href="https://github.com/settings/tokens" target="_blank">Create one here</a><br>
-                Required scope: <code>repo</code>
-            </div>
-        </div>
-    </div>
-
-    <header class="header">
-        <div class="header-left">
-            <div class="logo">
-                <span>🎯</span>
-                <span>Mission Control</span>
-            </div>
-            <nav class="nav-tabs">
-                <div class="nav-tab active">Tasks</div>
-            </nav>
-        </div>
-        <div style="display: flex; align-items: center; gap: 12px;">
-            <div id="userStatus" class="user-status" style="display: none;">
-                <span>👤</span>
-                <span class="username" id="username">Not connected</span>
-                <button class="logout-btn" onclick="logout()">Logout</button>
-            </div>
-            <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; color: #888; font-size: 0.9rem;">
-                <input type="checkbox" id="autoSaveCheckbox" style="cursor: pointer;">
-                Auto-save
-            </label>
-            <button id="saveBtn" class="btn btn-primary" onclick="saveToGitHub()" style="display: flex; align-items: center; gap: 6px;">
-                <span>💾</span> Save to GitHub
-            </button>
-            <span id="saveStatus" style="color: #888; font-size: 0.85rem; min-width: 120px;"></span>
-            <span style="color: #888;">🎛️ Local Mode</span>
-        </div>
-    </header>
+        
+        .modal-body {
             padding: 24px;
         }
         
@@ -473,6 +431,20 @@
     </style>
 </head>
 <body>
+    <div class="login-overlay" id="loginOverlay">
+        <div class="login-box">
+            <div class="logo"><span>🎯</span></div>
+            <h2>Welcome to Mission Control</h2>
+            <p>Connect your GitHub account to sync tasks</p>
+            <input type="password" id="tokenInput" class="login-input" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx">
+            <button class="login-btn" onclick="connectGitHub()">Connect</button>
+            <div class="login-help">
+                Need a token? <a href="https://github.com/settings/tokens" target="_blank">Create one here</a><br>
+                Required scope: <code>repo</code>
+            </div>
+        </div>
+    </div>
+
     <header class="header">
         <div class="header-left">
             <div class="logo">
@@ -484,6 +456,11 @@
             </nav>
         </div>
         <div style="display: flex; align-items: center; gap: 12px;">
+            <div id="userStatus" class="user-status" style="display: none;">
+                <span>👤</span>
+                <span class="username" id="username">Not connected</span>
+                <button class="logout-btn" onclick="logout()">Logout</button>
+            </div>
             <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; color: #888; font-size: 0.9rem;">
                 <input type="checkbox" id="autoSaveCheckbox" style="cursor: pointer;">
                 Auto-save
