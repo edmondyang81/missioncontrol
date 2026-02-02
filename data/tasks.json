@@ -4,7 +4,7 @@
       "id": "guide_onboarding",
       "title": "🚀 Onboarding Guide — Set Up Mission Control",
       "description": "Welcome to Mission Control! Follow these steps to complete your setup. Work through each subtask in order.\\n\\n**Tip:** Click on a subtask to see detailed instructions. Check it off when done.",
-      "status": "permanent",
+      "status": "backlog",
       "project": "guides",
       "tags": [
         "guide",
@@ -379,7 +379,7 @@
       "id": "man_united_tracker",
       "title": "🔴 Man United Match Tracker",
       "description": "Track Manchester United matches and send reminders to Edmond.\\n\\n**Setup:** Automated Sunday reminders at 13:45 (45 mins before kickoff)",
-      "status": "in_progress",
+      "status": "backlog",
       "project": "automation",
       "tags": [
         "sports",
